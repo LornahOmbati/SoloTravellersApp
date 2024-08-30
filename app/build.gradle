@@ -1,0 +1,81 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.example.solotravellersapp'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.solotravellersapp"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    implementation libs.material
+    implementation libs.fragment
+    // Other dependencies
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    implementation libs.material
+
+    //sqlite imports
+//    implementation libs.android.database.sqlcipher
+    implementation libs.sqlite
+    implementation 'net.zetetic:android-database-sqlcipher:4.5.4'
+
+
+    //youtube player
+    //implementation files('libs/YouTubeAndroidPlayerApi.jar')
+    implementation libs.core
+    implementation libs.chromecast.sender
+    //youtube player
+
+    //youtube api
+//    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    implementation 'com.google.android.youtube:player-api:1.2.2'
+//    implementation 'com.android.support:appcompat-v7:33.0.0'
+    //youtube api
+
+    //implementation files('libs/commons-net-3.3.jar')
+    implementation libs.okhttp
+    implementation libs.base64
+
+    implementation 'net.zetetic:android-database-sqlcipher:4.5.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+
+}

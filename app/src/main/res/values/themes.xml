@@ -1,0 +1,68 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SoloTravellersApp"  parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Customize your light theme here. -->
+<!--    <style name="Theme.SoloTravellersApp" parent="Base.Theme.SoloTravellersApp" />-->
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_200</item>
+        <item name="colorPrimaryVariant">@color/blue_300</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.mainTheme" parent="Theme.Design.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/blue_200</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue_300</item>
+        <item name="colorSecondaryVariant">@color/blue_200</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:textColor">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
+
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#4cb334</item>
+        <item name="color">@color/black</item>
+    </style>
+
+    <style name="AppTheme33" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorAccent">@color/teal_700</item>
+    </style>
+
+<!--    <style name="titles">-->
+<!--        <item name="fontFamily">@font/spacegrotesk</item>-->
+<!--    </style>-->
+<!--    <style name="my_texts">-->
+<!--        <item name="fontFamily">@font/spacegrotesk_bold</item>-->
+<!--    </style>-->
+<!--    <style name="my_texts_small">-->
+<!--        <item name="fontFamily">@font/spacegrotesk_light</item>-->
+<!--    </style>-->
+
+<!--    <style name="body">-->
+<!--        <item name="fontFamily">@font/muli</item>-->
+<!--    </style>-->
+
+    <style name="Theme.soloTravellersApp_AndroidX.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.soloTravellersApp_AndroidX.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"  />
+
+</resources>
